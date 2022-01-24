@@ -8,7 +8,7 @@ abstract class Database {
     //Connexion à la BDD
     private static function setDb()
     {
-        self::$_dbConnect = new \PDO( 'mysql:host=database:3306;dbname=home_cloud;charset=utf8', 'root', 'Tit@ncheat287');
+        self::$_dbConnect = new \PDO( 'mysql:host=your-mysql-host address;dbname=your-dbname;charset=utf8', 'mysql-user', 'mysql-password');
         self::$_dbConnect->setAttribute( \PDO::ATTR_ERRMODE, \PDO::ERRMODE_WARNING );
     }
     
